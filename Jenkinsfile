@@ -34,6 +34,7 @@ pipeline
                           sh "ansible-playbook ansible/register.yml -i ansible/inventory/host.yml "
                            }
                           }
+                        }
 
 }
 }
