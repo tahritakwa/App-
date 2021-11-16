@@ -1,0 +1,13 @@
+---
+# tasks file for register
+- name: log into DockerHUB
+  docker_login:
+    username: takwa99
+    password: After2021 
+
+- name: tag and push to docker hub
+  docker_image: 
+    name: devops:latest
+    repository: takwa99/devops
+    tag: end
+    push: yes

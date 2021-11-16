@@ -27,6 +27,13 @@ pipeline
                            }
                           }
                       }
+                      
+                      stage('docker_register'){
+                        steps{
+                         script{
+                          sh "ansible-playbook ansible/register.yml -i ansible/inventory/host.yml "
+                           }
+                          }
 
 }
 }
